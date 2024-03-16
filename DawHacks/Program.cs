@@ -27,14 +27,14 @@ while (!game.IsGameFinished())
 if (game.IsGameFinished())
 {
     Console.WriteLine("---");
-    if (Game.emission <= 2721.55)
+    if (Game.emission <= 19.883)
     {
         Console.WriteLine($"Your carbon footprint is {Game.emission} kg/day.");
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("You are below average!");
         Console.ResetColor();
     }
-    else if (Game.emission > 2721.55 && Game.emission < 7257.48)
+    else if (Game.emission >= 19.883 && Game.emission <= 27.34)
     {
         Console.WriteLine($"Your carbon footprint is {Game.emission} kg/day.");
         Console.ForegroundColor = ConsoleColor.Yellow;
@@ -47,6 +47,7 @@ if (game.IsGameFinished())
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("You are above average!");
         Console.ResetColor();
+        Console.WriteLine("*plays sad horn sound*");
     }
 }
 

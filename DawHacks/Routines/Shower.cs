@@ -25,6 +25,7 @@ Now that you're back home, are you taking a shower or a bath?
                     int shower;
 
                 label1:
+                    Console.Clear();
                     Console.WriteLine("Are you taking a hot or cold shower?");
                     Console.WriteLine("[1] Hot");
                     Console.WriteLine("[2] Cold");
@@ -47,7 +48,7 @@ Now that you're back home, are you taking a shower or a bath?
                                 Console.WriteLine(ex.Message);
                             }
                         }
-                        if (shower == 2)
+                        else if (shower == 2)
                         {
                             Console.WriteLine("How long are you taking a shower for?");
                             try

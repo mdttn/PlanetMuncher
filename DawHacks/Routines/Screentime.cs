@@ -21,7 +21,7 @@ Did you use your phone today?
                     try
                     {
                         Game.screentime = Convert.ToDouble(Console.ReadLine());
-                        Game.emission =+ Game.screentime * 0.05815;
+                        Game.emission += Game.screentime * 0.05815;
                         Game.Transition<Lights2>();
                     }
                     catch (Exception ex)

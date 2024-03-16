@@ -26,7 +26,7 @@ How do you get there?
                     try
                     {
                         Game.car = Convert.ToDouble(Console.ReadLine());
-                        Game.emission = +Game.car * 3.36;
+                        Game.emission += Game.car * 3.36;
                         Game.Transition<Lunch>();
                     }
                     catch (Exception ex)
@@ -39,7 +39,7 @@ How do you get there?
                     try
                     {
                         Game.stm = Convert.ToDouble(Console.ReadLine());
-                        Game.emission = +Game.stm * 0.049 * 2;
+                        Game.emission += Game.stm * 0.049 * 2;
                         Game.Transition<Lunch>();
                     }
                     catch (Exception ex)

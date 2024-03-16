@@ -26,7 +26,7 @@ Did you use any toilet paper today?
                     try
                     {
                         Game.toilet = Convert.ToDouble(Console.ReadLine());
-                        Game.emission =+ Game.toilet * 0.65;
+                        Game.emission += Game.toilet * 0.65;
                         Game.Transition<Screentime>();
                     }
                     catch (Exception ex)
