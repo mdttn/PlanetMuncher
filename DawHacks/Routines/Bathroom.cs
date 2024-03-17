@@ -10,11 +10,8 @@ namespace DawHacks.Routines
     internal class Bathroom : Routine
     {
         internal override string CreateDescription() =>
-@"After eating and drinking during the day, you must have gone to the bathroom.
-
-Did you use any toilet paper today?
-[1] Yes
-[2] No
+@"After eating and drinking during the day, you must have gone to the bathroom at least once.
+[1] Ok
 ---";
 
         internal override void ReceiveChoice(int choice)
@@ -33,9 +30,6 @@ Did you use any toilet paper today?
                     {
                         Console.WriteLine(ex.Message);
                     }
-                    break;
-                case 2:
-                    Game.Transition<Screentime>();
                     break;
                 default:
                     // reset

@@ -36,7 +36,7 @@ Now that you're back home, are you taking a shower or a bath?
                         if (shower == 1)
                         {
                             Console.Clear();
-                            Console.WriteLine("How long are you taking a shower for?");
+                            Console.WriteLine("How long are you running the water for?");
                             try
                             {
                                 Game.shower = Convert.ToDouble(Console.ReadLine());
@@ -50,11 +50,11 @@ Now that you're back home, are you taking a shower or a bath?
                         }
                         else if (shower == 2)
                         {
-                            Console.WriteLine("How long are you taking a shower for?");
+                            Console.WriteLine("How long are you running the water for?");
                             try
                             {
                                 Game.shower = Convert.ToDouble(Console.ReadLine());
-                                Game.emission += Game.shower * 9.287;
+                                Game.emission += Game.shower * 9;
                                 Game.Transition<Dinner>();
                             }
                             catch (Exception ex)

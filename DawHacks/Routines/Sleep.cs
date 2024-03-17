@@ -1,15 +1,19 @@
 ﻿using DawHacks.Routines;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DawHacks.Routines
 {
-    internal class Screentime : Routine
+    internal class Sleep : Routine
     {
         internal override string CreateDescription() =>
-@"You just finished brushing your teeth for the night.
+@"You're (finally) about to go to sleep!
 
-Did you use your phone today?
-[1] Yes
-[2] No
+Don't forget to turn off the lights.
+[1] Ok
 ---";
 
         internal override void ReceiveChoice(int choice)
@@ -17,20 +21,17 @@ Did you use your phone today?
             switch (choice)
             {
                 case 1:
-                    Console.WriteLine("What was your screentime?");
+                    Console.WriteLine("How long did you keep them on for after getting back home?");
                     try
                     {
-                        Game.screentime = Convert.ToDouble(Console.ReadLine());
-                        Game.emission += Game.screentime * 0.05815;
-                        Game.Transition<Sleep>();
+                        Game.lights2 = Convert.ToDouble(Console.ReadLine());
+                        Game.emission += Game.lights2 * 0.043;
+                        Game.Finish();
                     }
                     catch (Exception ex)
                     {
                         Console.WriteLine(ex.Message);
                     }
-                    break;
-                case 2:
-                    Game.Transition<Sleep>();
                     break;
                 default:
                     // reset

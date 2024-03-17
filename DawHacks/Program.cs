@@ -13,9 +13,9 @@ game.Add(new Dinner());
 game.Add(new Shower());
 game.Add(new Clothes());
 game.Add(new Screentime());
-game.Add(new Lights2());
+game.Add(new Sleep());
 
-while (!game.IsGameFinished())
+while (!game.IsGameFinished() && !game.HasQuit())
 {
     Console.Clear();
     Console.WriteLine(game.CurrentRoutineDescription);
@@ -49,6 +49,14 @@ if (game.IsGameFinished())
         Console.ResetColor();
         Console.WriteLine("*plays sad horn sound*");
     }
+}
+
+else if (game.HasQuit())
+{
+    Console.WriteLine("---");
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.WriteLine("EXIT");
+    Console.ResetColor();
 }
 
 Console.ReadKey();

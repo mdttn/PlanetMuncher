@@ -29,12 +29,51 @@ Did you charge your phone last night?
                     }
                     break;
                 case 2:
-                    Console.WriteLine("How long are you going to charge it for in the morning?");
+                    int charging;
+
+                label1:
+                    Console.Clear();
+                    Console.WriteLine("Are you going to charge it in the morning?");
+                    Console.WriteLine("[1] Yes");
+                    Console.WriteLine("[2] No");
+                    Console.WriteLine("---");
                     try
                     {
-                        Game.charging = Convert.ToDouble(Console.ReadLine());
-                        Game.emission = Game.charging * 0.0025;
-                        Game.Transition<Breakfast>();
+                        charging = Convert.ToInt32(Console.ReadLine());
+                        if (charging == 1)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("How long are you running the water for?");
+                            try
+                            {
+                                Game.charging = Convert.ToDouble(Console.ReadLine());
+                                Game.emission += Game.charging * 0.0025;
+                                Game.Transition<Breakfast>();
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message);
+                            }
+                        }
+                        else if (charging == 2)
+                        {
+                            Console.WriteLine("How long are you running the water for?");
+                            try
+                            {
+                                Game.charging = Convert.ToDouble(Console.ReadLine());
+                                Game.emission += Game.charging * 0.0025;
+                                Game.Transition<Breakfast>();
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message);
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid input.");
+                            goto label1;
+                        }
                     }
                     catch (Exception ex)
                     {
