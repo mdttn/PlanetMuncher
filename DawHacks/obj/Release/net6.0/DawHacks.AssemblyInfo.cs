@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DawHacks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1952b8da7926829f04bdf30f5bc2fc4d37aee719")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fe94e7ce2c262dcdfee35eac76090b6c351516a")]
 [assembly: System.Reflection.AssemblyProductAttribute("DawHacks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DawHacks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
