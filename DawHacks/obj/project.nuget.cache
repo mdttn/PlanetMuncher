@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "2K+HcugVF14AHpCQHgXjs+TaVYgWE+7+iDIPCYgEf5OCn6cImGPW+pnprf+9rjc0cfhryddgDJqSGWfxzzayEg==",
+  "dgSpecHash": "gLJxZeCLcxE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\there\\OneDrive - College LaSalle\\DawHacks\\DawHacks.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\there\\OneDrive\\Documents\\PlanetMuncher\\DawHacks\\DawHacks.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\there\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\there\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\there\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\there\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,5 +1,6 @@
 ﻿using DawHacks;
 using DawHacks.Routines;
+using System.Reflection.Emit;
 
 var game = new Game();
 game.Add(new Start());
@@ -17,11 +18,19 @@ game.Add(new Sleep());
 
 while (!game.IsGameFinished() && !game.HasQuit())
 {
+Label:
     Console.Clear();
     Console.WriteLine(game.CurrentRoutineDescription);
-    int choice = Convert.ToInt32(Console.ReadLine()?.ToLower() ?? "");
+    try
+    {
+        int choice = Convert.ToInt32(Console.ReadLine()?.ToLower() ?? "");
+        game.ReceiveChoice(choice);
+    }
+    catch
+    {
+        goto Label;
+    }
     Console.Clear();
-    game.ReceiveChoice(choice);
 }
 
 if (game.IsGameFinished())
