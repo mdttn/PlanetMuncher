@@ -5,7 +5,7 @@ namespace DawHacks.Routines
     internal class Dinner : Routine
     {
         internal override string CreateDescription() =>
-@"It's the evening and you're done showering/bathing.
+@"It's the evening and you're done washing yourself.
 
 Are you eating dinner?
 [1] Yes

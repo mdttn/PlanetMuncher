@@ -17,6 +17,7 @@ Did you use your phone today?
             switch (choice)
             {
                 case 1:
+                    Console.Clear();
                     Console.WriteLine("What was your screentime?");
                     try
                     {

@@ -15,6 +15,7 @@ Are you washing and drying your clothes today?
             switch (choice)
             {
                 case 1:
+                    Console.Clear();
                     Console.WriteLine("How long are both the washing and drying machines going to take together?");
                     try
                     {

@@ -23,7 +23,6 @@ Now that you're back home, are you taking a shower or a bath?
             {
                 case 1:
                     int shower;
-
                 label1:
                     Console.Clear();
                     Console.WriteLine("Are you taking a hot or cold shower?");
@@ -36,7 +35,7 @@ Now that you're back home, are you taking a shower or a bath?
                         if (shower == 1)
                         {
                             Console.Clear();
-                            Console.WriteLine("How long are you running the water for?");
+                            Console.WriteLine("For how long are you running the water?");
                             try
                             {
                                 Game.shower = Convert.ToDouble(Console.ReadLine());
@@ -46,11 +45,13 @@ Now that you're back home, are you taking a shower or a bath?
                             catch (Exception ex)
                             {
                                 Console.WriteLine(ex.Message);
+                                goto label1;
                             }
                         }
                         else if (shower == 2)
                         {
-                            Console.WriteLine("How long are you running the water for?");
+                            Console.Clear();
+                            Console.WriteLine("For how long are you running the water?");
                             try
                             {
                                 Game.shower = Convert.ToDouble(Console.ReadLine());
@@ -60,6 +61,7 @@ Now that you're back home, are you taking a shower or a bath?
                             catch (Exception ex)
                             {
                                 Console.WriteLine(ex.Message);
+                                goto label1;
                             }
                         }
                         else

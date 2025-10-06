@@ -16,7 +16,8 @@ Did you charge your phone last night?
             switch (choice)
             {
                 case 1:
-                    Console.WriteLine("How long did you charge it for?");
+                    Console.Clear();
+                    Console.WriteLine("For how long did you charge it?");
                     try
                     {
                         Game.charging = Convert.ToDouble(Console.ReadLine());
@@ -43,7 +44,7 @@ Did you charge your phone last night?
                         if (charging == 1)
                         {
                             Console.Clear();
-                            Console.WriteLine("How long are you running the water for?");
+                            Console.WriteLine("For how long are you going to charge it?");
                             try
                             {
                                 Game.charging = Convert.ToDouble(Console.ReadLine());
@@ -53,21 +54,12 @@ Did you charge your phone last night?
                             catch (Exception ex)
                             {
                                 Console.WriteLine(ex.Message);
+                                goto label1;
                             }
                         }
                         else if (charging == 2)
                         {
-                            Console.WriteLine("How long are you running the water for?");
-                            try
-                            {
-                                Game.charging = Convert.ToDouble(Console.ReadLine());
-                                Game.emission += Game.charging * 0.0025;
-                                Game.Transition<Breakfast>();
-                            }
-                            catch (Exception ex)
-                            {
-                                Console.WriteLine(ex.Message);
-                            }
+                            Game.Transition<Breakfast>();
                         }
                         else
                         {
@@ -78,6 +70,7 @@ Did you charge your phone last night?
                     catch (Exception ex)
                     {
                         Console.WriteLine(ex.Message);
+                        goto label1;
                     }
                     break;
                 default:

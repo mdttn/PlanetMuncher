@@ -22,7 +22,8 @@ Did you turn on the lights while getting ready?
             switch (choice)
             {
                 case 1:
-                    Console.WriteLine("How long did you keep them on for?");
+                    Console.Clear();
+                    Console.WriteLine("For how long did you keep them on?");
                     try
                     {
                         Game.lights = Convert.ToDouble(Console.ReadLine());
@@ -33,7 +34,7 @@ Did you turn on the lights while getting ready?
                     {
                         Console.WriteLine(ex.Message);
                     }
-                    break;
+                break;
                 case 2:
                     Game.Transition<Transport>();
                     break;

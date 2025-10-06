@@ -19,12 +19,16 @@ namespace DawHacks.Routines
             switch (choice)
             {
                 case 1:
-                    Console.WriteLine("How many plies of toilet paper did you use?");
+                    Console.Clear();
+                    Console.WriteLine("How many plies of toilet paper did you use? (> 0)");
                     try
                     {
                         Game.toilet = Convert.ToDouble(Console.ReadLine());
-                        Game.emission += Game.toilet * 0.65;
-                        Game.Transition<Screentime>();
+                        if (Game.toilet > 0)
+                        {
+                            Game.emission += Game.toilet * 0.65;
+                            Game.Transition<Screentime>();
+                        }
                     }
                     catch (Exception ex)
                     {

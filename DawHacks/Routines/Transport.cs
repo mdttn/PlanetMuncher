@@ -22,11 +22,12 @@ How do you get there?
             switch (choice)
             {
                 case 1:
+                    Console.Clear();
                     Console.WriteLine("How long is the drive?");
                     try
                     {
                         Game.car = Convert.ToDouble(Console.ReadLine());
-                        Game.emission += Game.car * 3.36;
+                        Game.emission += Game.car * 3.36 * 2;
                         Game.Transition<Lunch>();
                     }
                     catch (Exception ex)
@@ -35,7 +36,8 @@ How do you get there?
                     }
                     break;
                 case 2:
-                    Console.WriteLine("How many km do you need to commute for?");
+                    Console.Clear();
+                    Console.WriteLine("For how many km do you need to commute?");
                     try
                     {
                         Game.stm = Convert.ToDouble(Console.ReadLine());

@@ -21,7 +21,7 @@ Don't forget to turn off the lights.
             switch (choice)
             {
                 case 1:
-                    Console.WriteLine("How long did you keep them on for after getting back home?");
+                    Console.WriteLine("For how long did you keep them on after getting back home?");
                     try
                     {
                         Game.lights2 = Convert.ToDouble(Console.ReadLine());
