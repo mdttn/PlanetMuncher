@@ -26,6 +26,7 @@ Where do you stand on the scale of carbon footprint? START to find out!
 > INSTRUCTIONS: Type out one of the options given in brackets + ENTER.
 > NOTES: You can type decimal numbers (e.g.: 4.5).
          The time is calculated in HOURS.
+         Leave the answer blank to go back to the previous prompt.
 
 [1] Start
 [2] Quit
