@@ -16,10 +16,11 @@ Did you eat your breakfast?
             switch (choice)
             {
                 case 1:
-                    Game.emission += 1.5;
+                    Game.emission += 1.5 + 0.85;
                     Game.Transition<Lights>();
                     break;
                 case 2:
+                    Game.emission += 0.85;
                     Game.Transition<Lights>();
                     break;
                 default:

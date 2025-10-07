@@ -22,7 +22,7 @@ Did you use your phone today?
                     try
                     {
                         Game.screentime = Convert.ToDouble(Console.ReadLine());
-                        Game.emission += Game.screentime * 0.05815;
+                        Game.emission += Game.screentime * 0.05815 + 0.85;
                         Game.Transition<Sleep>();
                     }
                     catch (Exception ex)
@@ -31,6 +31,7 @@ Did you use your phone today?
                     }
                     break;
                 case 2:
+                    Game.emission += 0.85;
                     Game.Transition<Sleep>();
                     break;
                 default:

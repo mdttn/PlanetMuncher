@@ -36,14 +36,14 @@ Label:
 if (game.IsGameFinished())
 {
     Console.WriteLine("---");
-    if (Game.emission <= 19.883)
+    if (Game.emission < 20) // aprox.
     {
         Console.WriteLine($"Your carbon footprint is {Game.emission} kg/day.");
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("You are below average!");
         Console.ResetColor();
     }
-    else if (Game.emission >= 19.883 && Game.emission <= 27.34)
+    else if (Game.emission < 27.35) // approx.
     {
         Console.WriteLine($"Your carbon footprint is {Game.emission} kg/day.");
         Console.ForegroundColor = ConsoleColor.Yellow;

@@ -21,6 +21,7 @@ Don't forget to turn off the lights.
             switch (choice)
             {
                 case 1:
+                    Console.Clear();
                     Console.WriteLine("For how long did you keep them on after getting back home?");
                     try
                     {
