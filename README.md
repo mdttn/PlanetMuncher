@@ -1,3 +1,3 @@
 # PlanetMuncher
-
-Environment-themed console app game for the DawHacks 2024 hacktahon (team of 3) - Basic Carbon footprint calculator
+### DawHacks 2024 hacktahon (team of 3)
+Environment-themed console app game - Carbon footprint calculator for a day
